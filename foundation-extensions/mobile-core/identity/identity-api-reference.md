@@ -22,7 +22,7 @@ scheme://authority/path?query=param#fragment
 In this example, the Adobe visitor data is appended as:
 
 ```text
-scheme://authority/path?query=param&TS=timestamp&MCMID=ecid&MCORGID=ecorgid@AdobeOrg#fragment
+scheme://authority/path?query=param&adobe_mc=TS=timestamp|MCMID=ecid|MCORGID=ecorgid@AdobeOrg#fragment
 ```
 
 Similarly, URLs without a query component:
@@ -34,7 +34,7 @@ scheme://authority/path#fragment
 The Adobe visitor data is appended as:
 
 ```text
-scheme://authority/path?TS=timestamp&MCMID=ecid&MCORGID=ecorgid@AdobeOrg#fragment
+scheme://authority/path?adobe_mc=TS=timestamp|MCMID=ecid|MCORGID=ecorgid@AdobeOrg#fragment
 ```
 
 If your application uses more complicated URLs, such as Angular URLs, you should use [getUrlVariables](identity-api-reference.md#geturlvariables).
